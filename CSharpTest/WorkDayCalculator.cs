@@ -23,7 +23,7 @@ namespace CSharpTest
                             continue;
                         }
                     }
-                    else if (weekEnds[i].StartDate <= startDate && startDate <= weekEnds[0].EndDate)
+                    else if (weekEnds[i].StartDate <= startDate && startDate <= weekEnds[i].EndDate)
                     {
                         startDate = weekEnds[i].EndDate.AddDays(1);
                         continue;
